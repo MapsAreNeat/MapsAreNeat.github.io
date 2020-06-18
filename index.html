@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+          Weather Dashboard 
+        </title> 
+        <link href="https://drive.google.com/uc?export=view&id=1ogd8Ynx-VuhY2292oYtht-xJIPPMc5xe" rel="stylesheet" type="text/css">
+    </head> 
+    <body> 
+    		<table id="current_weather">
+    			<tr>
+    				<td id="current_icon"><img id="current_icon_img" src=" "></td>
+    			</tr>
+    			<tr>
+    				<td id="current_phrase">Snow</td>
+    			</tr>
+    			<tr>
+    				<td id="current_temp">25</td>
+    			</tr>
+    			<tr>
+    				<td id="current_alerts1"></td>
+    			</tr>
+    			<tr>
+    				<td id="current_alerts2"></td>
+    			</tr>
+    		</table>
+    		<TABLE id="forecast">
+    			 <TR align="center">
+    			 	<TH id="forecast1day">Sunday</TH>
+    			 	<TH id="forecast2day">Monday</TH>
+    			 	<TH id="forecast3day">Tuesday</TH>
+    			 	<TH id="forecast4day">Wednesday</TH>
+    			 	<TH id="forecast5day">Thursday</TH>
+    			 	<TH id="forecast6day">Friday</TH>
+    			 </TR>
+    			 <TR id="forecast_icon" align="center">
+    			 	<TD id="forecast1icon"><img id="forecast_1_img" src=" "></TD>
+    			 	<TD id="forecast2icon"><img id="forecast_2_img" src=" "></TD>
+    			 	<TD id="forecast3icon"><img id="forecast_3_img" src=" "></TD>
+    			 	<TD id="forecast4icon"><img id="forecast_4_img" src=" "></TD>
+    			 	<TD id="forecast5icon"><img id="forecast_5_img" src=" "></TD>
+    			 	<TD id="forecast6icon"><img id="forecast_6_img" src=" "></TD>
+    			 </TR>
+    			 <TR id="forecast_phrase">
+    			 	<TD id="forecast1phrase">Phrase</TD>
+    			 	<TD id="forecast2phrase">Phrase</TD>
+    			 	<TD id="forecast3phrase">Phrase</TD>
+    			 	<TD id="forecast4phrase">Phrase</TD>
+    			 	<TD id="forecast5phrase">Phrase</TD>
+    			 	<TD id="forecast6phrase">Phrase</TD>
+    			 </TR>
+    			 <TR id="high_temp">
+    			 	<TD id="forecast1high">28</TD>
+    			 	<TD id="forecast2high">32</TD>
+    			 	<TD id="forecast3high">35</TD>
+    			 	<TD id="forecast4high">52</TD>
+    			 	<TD id="forecast5high">63</TD>
+    			 	<TD id="forecast6high">76</TD>
+    			 </TR>
+    			 <TR id="low_temp">
+    			 	<TD id="forecast1low">15</TD>
+    			 	<TD id="forecast2low">22</TD>
+    			 	<TD id="forecast3low">27</TD>
+    			 	<TD id="forecast4low">45</TD>
+    			 	<TD id="forecast5low">48</TD>
+    			 	<TD id="forecast6low">55</TD>
+    			 </TR>
+    			 <TR id="forecast_precip">
+    			 	<TD id="forecast1precip">15% Precip</TD>
+    			 	<TD id="forecast2precip">100% Precip</TD>
+    			 	<TD id="forecast3precip">15% Precip</TD>
+    			 	<TD id="forecast4precip">10% Precip</TD>
+    			 	<TD id="forecast5precip">75% Precip</TD>
+    			 	<TD id="forecast6precip">95% Precip</TD>
+    			 </TR>
+    		</TABLE>
+    		<table id="current_detailed">
+    			<tr>
+					<td>Humidity:</td>
+					<td id="humidity">52</td>
+				</tr>
+				<tr>
+					<td>Feels Like:</td>
+					<td id="feels_like">12</td>
+				</tr>
+				<tr>
+					<td>Pressure:</td>
+					<td id="pressure">29.92</td>
+				</tr>
+				<tr>
+					<td>Visibility:</td>
+					<td id="visibility">3</td>
+				</tr>
+				<tr>
+					<td>Wind:</td>
+					<td id="wind_speed">SE 7</td>
+				</tr>
+				<tr>
+					<td>Gusts:</td>
+					<td id="wind_gust">SE 15</td>
+				</tr>
+			</table>
+			
+			<table id="hourly_forecast">
+				<tr id="row1_time">
+					<td id="hourly1time">1:00pm</td>
+					<td id="hourly2time">2:00pm</td>
+					<td id="hourly3time">3:00pm</td>
+					<td id="hourly4time">4:00pm</td>
+					<td id="hourly5time">5:00pm</td>
+				</tr>
+				<tr>
+					<td id="hourly1icon"><img id="hourly_1_img" src=" "></td>
+					<td id="hourly2icon"><img id="hourly_2_img" src=" "></td>
+					<td id="hourly3icon"><img id="hourly_3_img" src=" "></td>
+					<td id="hourly4icon"><img id="hourly_4_img" src=" "></td>
+					<td id="hourly5icon"><img id="hourly_5_img" src=" "></td>
+				</tr>
+				<tr id="row1_phrase">
+					<td id="hourly1phrase">Thunderstorms</td>
+					<td id="hourly2phrase">Mostly Cloudy</td>
+					<td id="hourly3phrase">Snow</td>
+					<td id="hourly4phrase">Most Cloudy</td>
+					<td id="hourly5phrase">Rain</td>
+				</tr>
+				<tr id="row1_temp">
+					<td id="hourly1temp">26</td>
+					<td id="hourly2temp">27</td>
+					<td id="hourly3temp">29</td>
+					<td id="hourly4temp">30</td>
+					<td id="hourly5temp">29</td>
+				</tr>
+				<tr id="row1_precip">
+					<td id="hourly1precip">100% Precip</td>
+					<td id="hourly2precip">100% Precip</td>
+					<td id="hourly3precip">100% Precip</td>
+					<td id="hourly4precip">100% Precip</td>
+					<td id="hourly5precip">100% Precip</td>
+				</tr>
+				<tr id="row1_wind">
+					<td id="hourly1wind">SE 7</td>
+					<td id="hourly2wind">SE 8</td>
+					<td id="hourly3wind">SE 10</td>
+					<td id="hourly4wind">SE 12</td>
+					<td id="hourly5wind">SE 10</td>
+				</tr>
+				<tr id="row2_time">
+					<td id="hourly6time">6:00pm</td>
+					<td id="hourly7time">7:00pm</td>
+					<td id="hourly8time">8:00pm</td>
+					<td id="hourly9time">9:00pm</td>
+					<td id="hourly10time">10:00pm</td>
+				</tr>
+				<tr>
+					<td id="hourly6icon"><img id="hourly_6_img" src=" "></td>
+					<td id="hourly7icon"><img id="hourly_7_img" src=" "></td>
+					<td id="hourly8icon"><img id="hourly_8_img" src=" "></td>
+					<td id="hourly9icon"><img id="hourly_9_img" src=" "></td>
+					<td id="hourly10icon"><img id="hourly_10_img" src=" "></td>
+				</tr>
+				<tr id="row2_phrase">
+					<td id="hourly6phrase">Thunderstorms</td>
+					<td id="hourly7phrase">Mostly Cloudy</td>
+					<td id="hourly8phrase">Snow</td>
+					<td id="hourly9phrase">Most Cloudy</td>
+					<td id="hourly10phrase">Rain</td>
+				</tr>
+				<tr id="row2_temp">
+					<td id="hourly6temp">27</td>
+					<td id="hourly7temp">25</td>
+					<td id="hourly8temp">23</td>
+					<td id="hourly9temp">20</td>
+					<td id="hourly10temp">19</td>
+				</tr>
+				<tr id="row2_precip">
+					<td id="hourly6precip">100% Precip</td>
+					<td id="hourly7precip">100% Precip</td>
+					<td id="hourly8precip">100% Precip</td>
+					<td id="hourly9precip">100% Precip</td>
+					<td id="hourly10precip">100% Precip</td>
+				</tr>
+				<tr id="row2_wind">
+					<td id="hourly6wind">SE 9</td>
+					<td id="hourly7wind">SE 8</td>
+					<td id="hourly8wind">SE 8</td>
+					<td id="hourly9wind">SE 6</td>
+					<td id="hourly10wind">SE 5</td>
+				</tr>
+    </body> 
+    <script src="https://drive.google.com/uc?export=view&id=1jNKkSl7H1gupFN4iW8xZCpB-XUtfTqHO" type="text/javascript"></script>
+</html> 
